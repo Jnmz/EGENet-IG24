@@ -15,7 +15,7 @@ timm 0.9.16
 * LEVIR-CD:
 [LEVIR-CD](https://pan.baidu.com/s/1gDS6Ea37zfHoZ4832jT9cg?pwd=BUPT)
 * WHU-CD:
-[WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html)
+[WHU-CD](https://github.com/Jnmz/EGENet-IG24/releases/download/1/WHU256.zip)
 
 and put them into data directory. In addition, the processed whu dataset can be found in the release.
 
