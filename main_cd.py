@@ -54,10 +54,10 @@ if __name__ == '__main__':
     parser.add_argument('--multi_scale_infer', default=False, type=str)
     parser.add_argument('--multi_pred_weights', nargs='+', type=float, default=[0.5, 0.5, 0.5, 0.8, 1.0])
 
-    parser.add_argument('--net_G', default='base_transformer_pos_s4_dd8_dedim8', type=str,
-                        help='base_resnet18 | base_transformer_pos_s4 | '
-                             'base_transformer_pos_s4_dd8 | '
-                             'base_transformer_pos_s4_dd8_dedim8|ChangeFormerV5|SiamUnet_diff')
+    parser.add_argument('--net_G', default='EGENet', type=str,
+                        help='EGENet | BIT | '
+                             'EGCTNet | '
+                             'ICIF_Net | ChangeFormer')
     parser.add_argument('--loss', default='eas', type=str)
 
     # optimizer

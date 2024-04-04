@@ -26,7 +26,15 @@ and put it into pretrain directory.
 
 ## 4. Train & Test
 
-    python main_cd.py
-    
+    python main_cd.py --project_name 'EGENet_LEVIR' --data_name 'LEVIR' --net_G 'EGENet'
+    python main_cd.py --project_name 'EGENet_WHU' --data_name 'WHU' --net_G 'EGENet'
+    python main_cd.py --project_name 'EGCTNet_LEVIR' --data_name 'LEVIR' --net_G 'EGCTNet'
+    python main_cd.py --project_name 'EGCTNet_WHU' --data_name 'WHU' --net_G 'EGCTNet'
+    python main_cd.py --project_name 'BIT_LEVIR' --data_name 'LEVIR' --net_G 'BIT' --loss 'ce'
+    python main_cd.py --project_name 'BIT_WHU' --data_name 'WHU' --net_G 'BIT' --loss 'ce'
+    python main_cd.py --project_name 'ICIF_Net_LEVIR' --data_name 'LEVIR' --net_G 'ICIF_Net' --loss 'ce'
+    python main_cd.py --project_name 'ICIF_Net_WHU' --data_name 'WHU' --net_G 'ICIF_Net' --loss 'ce'
+    python main_cd.py --project_name 'ChangeFormer_LEVIR' --data_name 'LEVIR' --net_G 'ChangeFormer' --loss 'ce'
+    python main_cd.py --project_name 'ChangeFormer_WHU' --data_name 'WHU' --net_G 'ChangeFormer' --loss 'ce'
     
     
