@@ -16,7 +16,6 @@ from abc import ABCMeta, abstractmethod
 # from mmcv.cnn import ConvModule
 import pdb
 
-from scipy.io import savemat
 
 from models.pixel_shuffel_up import PS_UP
 
