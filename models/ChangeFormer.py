@@ -17,7 +17,6 @@ from abc import ABCMeta, abstractmethod
 import pdb
 
 
-from models.pixel_shuffel_up import PS_UP
 
 class EncoderTransformer(nn.Module):
     def __init__(self, img_size=256, patch_size=16, in_chans=3, num_classes=2, embed_dims=[64, 128, 256, 512],
