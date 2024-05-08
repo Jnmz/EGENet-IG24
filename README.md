@@ -1,5 +1,5 @@
-# EGENet
-
+# EGENet: Edge-Gguided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
+Here, we provide the pytorch implementation of the paper: Edge-Gguided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
 ## 1. Environment setup
 
 ```
@@ -10,8 +10,33 @@ torchvision 0.9.1
 einops 0.7.0
 timm 0.9.16
 ```
+## 2. Dataset Preparation
 
-## 2. Download the datesets:
+### Data structure
+
+```
+"""
+Change detection data set with pixel-level binary labels；(WHU256 or LEVIR-CD-256)
+├─A
+├─B
+├─label
+├─label_edge
+└─list
+"""
+```
+
+`A`: images of t1 phase;
+
+`B`:images of t2 phase;
+
+`label`: label maps;
+
+`label_edge`: using the Canny edge detection operator on theusing the Canny edge detection operator on the label maps;
+
+`list`: contains `train.txt, val.txt and test.txt`, each file records the image names (XXX.png) in the change detection dataset.
+
+
+## 3. Download the datesets:
 * LEVIR-CD:
 [LEVIR-CD](https://pan.baidu.com/s/1gDS6Ea37zfHoZ4832jT9cg?pwd=BUPT)
 * WHU-CD:
@@ -19,13 +44,14 @@ timm 0.9.16
 
 and put them into data directory. In addition, the processed whu dataset can be found in the release.
 
-## 3. Download the models (pretrain models):
+## 4. Download the models (pretrain models):
 
 * [resnet18](https://download.pytorch.org/models/resnet18-5c106cde.pth) 
 
 and put it into pretrain directory.
 
-## 4. Train & Test
+## 5. Train & Test
+The following are scripts for different networks and datasets, run according to your needs
 
     python main_cd.py --project_name 'EGENet_LEVIR' --data_name 'LEVIR' --net_G 'EGENet'
     python main_cd.py --project_name 'EGENet_WHU' --data_name 'WHU' --net_G 'EGENet'
@@ -38,4 +64,7 @@ and put it into pretrain directory.
     python main_cd.py --project_name 'ChangeFormer_LEVIR' --data_name 'LEVIR' --net_G 'ChangeFormer' --loss 'ce'
     python main_cd.py --project_name 'ChangeFormer_WHU' --data_name 'WHU' --net_G 'ChangeFormer' --loss 'ce'
     
-    
+## References
+Appreciate the work from the following repositories:
+
+- [EGCTNet](https://github.com/chen11221/EGCTNet_pytorch) (Our EGENet is implemented on the code provided in this repository)
