@@ -3,12 +3,9 @@ Here, we provide the pytorch implementation of the paper: Edge-Gguided Enhanceme
 ## 1. Environment setup
 
 ```
-CUDA 11.1
-Python 3.8
-pytorch 1.8.1
-torchvision 0.9.1
-einops 0.7.0
-timm 0.9.16
+conda create -n egenet python=3.8
+conda activate egenet
+pip install -r requirements.txt
 ```
 ## 2. Dataset Preparation
 
