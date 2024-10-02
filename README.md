@@ -1,5 +1,5 @@
-# EGENet: Edge-Gguided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
-Here, we provide the pytorch implementation of the paper: Edge-Gguided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
+# EGENet: Edge-Guided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
+Here, we provide the pytorch implementation of the paper: Edge-Guided Enhancement Network for Building Change Detection of Remote Sensing Images with a Hybrid CNN-Transformer Architecture
 
 ## Network Architecture
 ![image](./images/egenet.jpg)
